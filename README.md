@@ -1,5 +1,5 @@
 ---
-redirect_from: "/cgi-sys/defaultwebpage.cgi"
+redirect_from: "cgi-sys/defaultwebpage.cgi"
 ---
 
 ## Kichrum's Blog
