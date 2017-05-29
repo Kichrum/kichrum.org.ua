@@ -1,4 +1,6 @@
+---
 redirect_from: "/cgi-sys/defaultwebpage.cgi"
+---
 
 ## Kichrum's Blog
 
