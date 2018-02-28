@@ -1,4 +1,12 @@
 <h1>Kichrum's Blog - 404 - Страница не найдена</h1>
 <script>
-console.log('It works!');
+  function redirectToMonth() {
+    var matches = location.href.match(/-(\d{2})-(\d{4})\.html/);
+    if (matches && matches.length === 3) {
+      var year = matches[2];
+      var month = matches[1];
+      location.href = 'http://www.kichrum.org.ua/' + year + '/' + month + '/';
+    }
+  }
+  redirectToMonth();
 </script>
