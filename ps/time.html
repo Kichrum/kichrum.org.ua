@@ -118,17 +118,17 @@ function clock() {
   var NETdegrees = Math.floor(NETbase%360);
   var NETminutes = Math.floor((NETbase*60)%60);
   if (NETminutes <= 9) NETminutes = "0" + NETminutes;
-  var NETstring = NETdegrees + "°" + NETminutes + "' NET";
+  var NETstring = NETdegrees + "В°" + NETminutes + "' NET";
 
-  var localValue = "Местное время: " + year + "." + month + "." + date + " " + day + " " + hours + ":" + minutes + ":" + seconds + "." + milliseconds + " " + apm;
-  var GMTValue = "GMT/UTC время: " + GMTyear + "." + GMTmonth + "." + GMTdate + " " + GMTday + " " + GMThours + ":" + GMTminutes + ":" + GMTseconds + "." + milliseconds;
-  var dtimeValue = "Местное Десятичное время: " + decimaltime;
-  var udtimeValue = "Десятичное время GMT: " + udect; 
-  var umtValue = "Универсальное Метрическое время: " + umt1 + "." + umt2; 
-  var hexValue = "Шестнадцатиричное время: " + hexadecimalValue;
-  var unixValue = "Миллисекунд с 1/1/1970 00:00 GMT: " + utime;
-  var SwatchValue = "Swatch международное время: " + Swatch + " .beats"; // More at Swatch.com
-  var NETValue = "Новое Земляное время: " + NETstring; // More at Newearthtime.net
+  var localValue = "РњРµСЃС‚РЅРѕРµ РІСЂРµРјСЏ: " + year + "." + month + "." + date + " " + day + " " + hours + ":" + minutes + ":" + seconds + "." + milliseconds + " " + apm;
+  var GMTValue = "GMT/UTC РІСЂРµРјСЏ: " + GMTyear + "." + GMTmonth + "." + GMTdate + " " + GMTday + " " + GMThours + ":" + GMTminutes + ":" + GMTseconds + "." + milliseconds;
+  var dtimeValue = "РњРµСЃС‚РЅРѕРµ Р”РµСЃСЏС‚РёС‡РЅРѕРµ РІСЂРµРјСЏ: " + decimaltime;
+  var udtimeValue = "Р”РµСЃСЏС‚РёС‡РЅРѕРµ РІСЂРµРјСЏ GMT: " + udect; 
+  var umtValue = "РЈРЅРёРІРµСЂСЃР°Р»СЊРЅРѕРµ РњРµС‚СЂРёС‡РµСЃРєРѕРµ РІСЂРµРјСЏ: " + umt1 + "." + umt2; 
+  var hexValue = "РЁРµСЃС‚РЅР°РґС†Р°С‚РёСЂРёС‡РЅРѕРµ РІСЂРµРјСЏ: " + hexadecimalValue;
+  var unixValue = "РњРёР»Р»РёСЃРµРєСѓРЅРґ СЃ 1/1/1970 00:00 GMT: " + utime;
+  var SwatchValue = "Swatch РјРµР¶РґСѓРЅР°СЂРѕРґРЅРѕРµ РІСЂРµРјСЏ: " + Swatch + " .beats"; // More at Swatch.com
+  var NETValue = "РќРѕРІРѕРµ Р—РµРјР»СЏРЅРѕРµ РІСЂРµРјСЏ: " + NETstring; // More at Newearthtime.net
 
   document.clock.localface.value = localValue;
   document.clock.GMTface.value = GMTValue;
@@ -149,14 +149,14 @@ function clock() {
   var cseconds = 0;
   var cms = 0; 
 
-  var description = "Новго 2008 года";
+  var description = "РќРѕРІРіРѕ 2008 РіРѕРґР°";
   var future = new Date(cyear,cmonth,cdate,chours,cminutes,cseconds,cms);
   var future2 = future.getTime();
   countdown = future - utime;
   countsec = Math.floor(countdown/1000);
   countdays = Math.floor(countdown/86400000*1000)/1000;
-  var csValue = "Секунд до " + description + ": " + countsec;
-  var cdValue = "Дней до " + description + ": " + countdays;
+  var csValue = "РЎРµРєСѓРЅРґ РґРѕ " + description + ": " + countsec;
+  var cdValue = "Р”РЅРµР№ РґРѕ " + description + ": " + countdays;
   document.clock.csface.value = csValue
   document.clock.cdface.value = cdValue
 
@@ -172,7 +172,7 @@ function clock() {
 <BODY onLoad="clock()">
 
 <div align="center">
-<h3>Который час?</h3>
+<h3>РљРѕС‚РѕСЂС‹Р№ С‡Р°СЃ?</h3>
 <form name="clock" enctype="text/plain" onsubmit="0">
 <input type="text" name="localface" size="52" value="Loading" readonly><br>
 <input type="text" name="GMTface" size="52" value="Loading" readonly><br>
@@ -191,5 +191,5 @@ function clock() {
 
 
 
-<!-- Все права на даную страничку защищены компанией PoSt$page (www.ps.sumy.ua). Копирование любой информации (в т.ч. html-кода) разрешается только при указании ссылки на источник. -->
+<!-- Р’СЃРµ РїСЂР°РІР° РЅР° РґР°РЅСѓСЋ СЃС‚СЂР°РЅРёС‡РєСѓ Р·Р°С‰РёС‰РµРЅС‹ РєРѕРјРїР°РЅРёРµР№ PoSt$page (www.ps.sumy.ua). РљРѕРїРёСЂРѕРІР°РЅРёРµ Р»СЋР±РѕР№ РёРЅС„РѕСЂРјР°С†РёРё (РІ С‚.С‡. html-РєРѕРґР°) СЂР°Р·СЂРµС€Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РїСЂРё СѓРєР°Р·Р°РЅРёРё СЃСЃС‹Р»РєРё РЅР° РёСЃС‚РѕС‡РЅРёРє. -->
 </body>
