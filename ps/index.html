@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>PoSt$page</title>
+
+    <META HTTP-EQUIV="Expires" CONTENT="Fri, 19 Jan 2007 02:00:00 GMT">
+    <META NAME="GENERATOR" CONTENT="Kichrum Post">
+    <META NAME="Publisher-Email" CONTENT="root@insumy.net">
+    <META NAME="Publisher-URL" CONTENT="PoSt$page - http://kichrum.org.ua/ps/">
+    <META NAME="Keywords" CONTENT="post,kichrum,хостинг,почта,бесплатная,Сумы,Украина,PoSt$page,page,Sumy,ps,Суми,Україна">
+    <META content='text/html; charset=windows-1251' http-equiv=Content-Type>
+    <meta name="description" content="PoSt$page официальный сайт">
+	<link rel="shortcut icon" href="favicon.ico" />
+
+<!-- Все права на даную страничку защищены компанией PoSt$page (www.kichrum.org.ua/ps). Копирование любой информации (в т.ч. html-кода) разрешается только при указании ссылки на источник. -->
+	
+<style type="text/css">        
+        <!--
+        A  {text-decoration : none;}
+        A:Visited  {text-decoration : none;}
+        A:Active  {text-decoration : none;}
+        A:Hover  {text-decoration : underline;color : white;}
+		H4  {margin-bottom : 5px;}
+		UL  {margin-bottom : 3px; margin-top : 3px;}
+
+        .text  { }
+        .navtext  { font-family: sans-serif; }
+        .sample  {font-size : 11px; line-height : 16px;}
+		
+	body {
+		background-attachment: fixed;
+		scrollbar-3dlight-color: #4279C6;
+		scrollbar-base-color: #4279C6;
+		scrollbar-darkshadow-color: #CFDDD7;
+		scrollbar-face-color: #2E4588;
+		scrollbar-highlight-color: #CFDDD7;
+		scrollbar-shadow-color: #4279C6;
+		scrollbar-track-color: #4A7FCB;
+		scrollbar-arrow-color: #CFDDD7;
+		}
+		
+        -->
+</style>
+
+<SCRIPT language=JavaScript>
+<!--
+var rate=20;
+var obj;
+var act=0;
+var elmH=0;
+var elmS=128;
+var elmV=255;
+var clrOrg;
+var TimerID;
+
+if(navigator.appName.indexOf("Microsoft",0)!=-1&&parseInt(navigator.appVersion)>=4){Browser=true;}else{Browser=false;}if(Browser){document.onmouseover=doRainbowAnchor;document.onmouseout=stopRainbowAnchor;}function doRainbow(){if(Browser&&act!=1){act=1;obj=event.srcElement;clrOrg=obj.style.color;TimerID=setInterval("ChangeColor()",100);}}function stopRainbow(){if(Browser&&act!=0){obj.style.color=clrOrg;clearInterval(TimerID);act=0;}}function doRainbowAnchor(){if(Browser&&act!=1){obj=event.srcElement;while(obj.tagName!='A'&&obj.tagName!='BODY'){obj=obj.parentElement;if(obj.tagName=='A'||obj.tagName=='BODY')
+break;}if(obj.tagName=='A'&&obj.href!=''){act=1;clrOrg=obj.style.color;TimerID=setInterval("ChangeColor()",100);}}}function stopRainbowAnchor(){if(Browser&&act!=0){if(obj.tagName=='A'){obj.style.color=clrOrg;clearInterval(TimerID);act=0;}}}function ChangeColor(){obj.style.color=makeColor();}function makeColor(){if(elmS==0){elmR=elmV;elmG=elmV;elmB=elmV;}else{t1=elmV;t2=(255-elmS)*elmV/255;t3=elmH%60;t3=(t1-t2)*t3/60;if(elmH<60){elmR=t1;elmB=t2;elmG=t2+t3;}else if(elmH<120){elmG=t1;elmB=t2;elmR=t1-t3;}else if(elmH<180){elmG=t1;elmR=t2;elmB=t2+t3;}else if(elmH<240){elmB=t1;elmR=t2;elmG=t1-t3;}else if(elmH<300){elmB=t1;elmG=t2;elmR=t2+t3;}else if(elmH<360){elmR=t1;elmG=t2;elmB=t1-t3;}else{elmR=0;elmG=0;elmB=0;}}elmR=Math.floor(elmR);elmG=Math.floor(elmG);elmB=Math.floor(elmB);clrRGB='#'+elmR.toString(16)+elmG.toString(16)+elmB.toString(16);elmH=elmH+rate;if(elmH>=360)
+elmH=0;return clrRGB;}
+		     
+			     //-->
+</SCRIPT>
+
+</head>
+
+<body lang=Ru bgcolor=#4279C6 text=white alink=white vlink=white link=white>
+
+<div style="color: white; width: auto; margin: 0px; padding: 0px 0px 0px 30px; background-color: black; font-size: 8pt;">http://<a href="http://kichrum.org.ua/">Kichrum's Blog</a>/<b>PoSt$page</b>/<a href="sub/bridges/index.html">Мости Світу</a>/</div>
+
+<div align=center><table width=700 cellspacing=0 cellpadding=0>
+
+	<tr><td background='images/postpage.jpg' width=485 height=251></td>
+	<td rowspan=2 background='images/menu.jpg' width=216 height=471>
+	<br><br><br><br><br><br>
+	<div align=center>
+	<b>
+	<a href=main.html target=frame>Главная</a>
+	<br>- = - = -
+	<br><a href=blog/index.html target=frame>Мой дневник</a>
+	
+	<br><a href=services.html target=frame>Мои сервисы</a>
+	
+	<br><a href=mob.html target=frame>Для мобилок</a>
+	
+	<br>- = - = -
+	
+	<br><a href=sites.html target=frame>Поддомены</a>
+	
+	<br><a href=portall.html target=frame>PortAll</a>
+	
+	<br><a href=amyp.html target=frame>Амур в Сумах</a>
+	
+	<br><a href=24love.html target=frame>Любовь навсегда</a>
+	
+	<br><a href=link.html target=frame>Интересное в интернете</a>
+	
+	<br><a href=time.html target=frame>Который час?</a>
+	
+	<br>- = - = -
+	<br><a href=about.html target=frame>О сайте</a>
+	</b>
+	</div>
+	
+	</td></tr>
+	<tr><td align=center background='images/text.jpg' width=485 height=220>
+  
+<iframe name=frame src="main.html" width="458" height="185" frameborder=0 scrolling=auto></iframe>
+
+  
+  
+  
+  <br><br>
+	
+	</td></tr>
+
+
+	<tr><td colspan=2 background='images/copy.jpg' width=700 height=54>
+		<center>
+
+
+
+<font size="+2"><b>Здесь были счетчики и баннеры, в частности</b></font> <img src='images/pssumyua.jpg' border=0 alt="PoSt$page" title="Наш баннер" width="88" height="31">
+
+</center>
+	</td></tr>
+</table>
+
+<table width=700><div align=center>
+<small>
+<a href="http://portall.org.ua/" title="PortAll - Украинский информационный портал">portall - украинский информационный портал</a>
+<a href="http://24love.org.ua/" title="Знакомства 24 часа в сутки, Любовь навсегда">крупнейший сайт знакомств в украине</a>
+<a href="http://love.portall.org.ua/" title="Украинский сайт знакомств">на love portall уже более 8 миллионов анкет</a>
+<a href="http://amyp.sumy.ua/" title="Резиденция Амура в Сумах">знакомства без заморочек</a>
+<a href="http://www.textsale.ru/team2370.html" target=_blank>требуются журналисты - работа на дому</a>
+<a href="http://banner.kiev.ua/" title="УБС">украинская баннерная сеть</a>
+<a href="http://ads.sumy.ua/" target=_blank>сумская баннерная сеть</a>
+<a href="http://tak.ru/" onClick="this.href='http://tak.ru/partner.php?id=27167'" target=_blank>tak.ru - заработай на своем сайте</a>
+<a href="http://www.wmmail.ru/" onClick="this.href='http://www.wmmail.ru/index.php?ref=PoSt'" target=_blank>лучший почтовый спонсор wmmail.ru</a>
+<a href="http://my.begun.ru/service/add.new.phtml" onClick="this.href='http://referal.begun.ru/advert.php?oid=67201769'" title="Купите рекламу от 1 руб. за клиента!" target=_blank>реклама на бегуне</a>
+</small>
+
+<br><br>Copyright © 2006-2008 "<a href='http://kichrum.org.ua/ps/'>PoSt$page</a>"
+</div>
+</table>
+</div>
+
+</body>
+</html>
+
+<!-- Все права на даную страничку защищены компанией PoSt$page (www.kichrum.org.ua/ps). Копирование любой информации (в т.ч. html-кода) разрешается только при указании ссылки на источник. -->
